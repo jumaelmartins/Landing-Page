@@ -3,7 +3,4 @@
     --white-color: white;
   }
   
-  #contato form {
-    display: flex;
-    flex-flow: column nowrap;
-  }
+ 

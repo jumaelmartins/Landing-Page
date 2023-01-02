@@ -1,0 +1,74 @@
+
+@media screen and (min-width: 768px) {
+    .imgContainer {
+        display: flex;    
+    }
+
+    .home {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #gallery .grid {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #contato form {
+        display: grid;
+        grid-column: span 2;
+        padding: 0;        
+        width: 100%;
+    }
+
+    
+    #contato form fieldset {
+        display: flex;
+        flex-flow: column;
+        padding: 1rem;
+        
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+      }
+
+      #contato form div {
+        display: flex;
+        flex-flow: row nowrap;
+
+        width: 60rem;
+        align-items: center;
+        margin:  1rem;
+      } 
+
+      
+      #contato form div input {
+        margin:  1rem;
+        max-width: 30rem;
+      } 
+      
+      #contato form div textarea {
+        margin:  1rem;
+      } 
+
+      #contato form button {
+        align-self: flex-end;
+      } 
+
+
+
+}
+
+@media screen and (min-width: 375px) {
+    .galleryImg {
+        width: 36rem;
+        height: 36rem;
+    }
+  
+}

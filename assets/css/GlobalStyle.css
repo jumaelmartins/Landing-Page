@@ -10,7 +10,10 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  min-height: 100%;
+  min-width: 100%;
   font-size: 2rem;
+ 
   line-height: 5.5rem;
   letter-spacing: 0.15rem;
   word-spacing: 0.1rem;
@@ -49,6 +52,7 @@ a {
 }
 
 .content {
+  min-width: 100%;
   min-height: 100vh;
 }
 

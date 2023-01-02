@@ -1,8 +1,11 @@
-.home {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  color: var(--white-color);
 
+/*HOME PAGE*/
+.home {
+  display: flex;
+  color: var(--white-color);
+  text-align: center;
+
+  flex-wrap: wrap; /*fica ligado nisso*/
   align-items: center;
   justify-items: center;
 }
@@ -21,12 +24,12 @@
 }
 
 .imgContainer {
-  display: flex;
+  overflow: hidden;
+  display: none;
+
   align-items: center;
   justify-content: center;
-
-  width: 60rem;
-  max-width: 80%;
+  max-width: 100%
 }
 
 .home img {
@@ -37,14 +40,16 @@
   height: 4rem;
 }
 
-.aboutContent {
-  display: flex;
-  flex-flow: column nowrap;
-  text-align: center;
+/*INICIAL PAGE */
 
-  width: 80rem;
-  justify-content: center;
-  align-items: center;
+.aboutContent {
+ display: flex;
+ flex-wrap: wrap;
+ text-align: center;
+ 
+ justify-content: center;
+ align-items: center;
+ max-width: 80rem;
 }
 
 .aboutContent p {
@@ -55,13 +60,16 @@
   margin-top: 4rem;
 }
 
+/* DESTAQUES */
 .services {
   color: var(--white-color);
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .services h2 {
@@ -89,19 +97,27 @@
   border-radius: 2.2rem;
   margin: 1rem;
   width: 100%;
-  max-width: 36rem;
-  max-height: 36rem;
+  
+  width: 20rem;
+  height: 20rem;
   overflow: hidden;
 }
 .galleryImg img {
   transition: 0.3s ease-in-out;
   cursor: pointer;
+
+  filter: grayscale(1);
+  
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .galleryImg img:hover {
   transform: translate(1rem, 1rem) rotate(15deg) scale(1.35);
+  filter: grayscale(0)
 }
 
+/* tabela*/
 .responsiveTable {
   overflow: auto;
 }
@@ -131,39 +147,47 @@ tfoot {
 thead {
   background-color: lightslategray;
 }
-
+/* form */
 #contato form {
-  margin-top: 4rem;
-  display: grid;
-  grid-column: span 2;
-  width: 60%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 0;
+}
+
+#contato form fieldset {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  padding: 1rem;
+  margin: 0;
 }
 
 #contato form div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-flow: column;
 
+  max-width: 100%;
   margin: 1rem 0;
 }
 
-#contato form fieldset {
-  width: 100%;
-  padding: 0 4rem;
-}
 
 #contato form fieldset div input {
   height: 3rem;
-  width: 60%;
   border-radius: 1.2rem;
+  
   border: none;
   padding: 1rem;
+  width: 100%;
 }
 
 #contato form fieldset div textarea {
-  width: 60%;
+  width: 100%;
   border-radius: 1.2rem;
   border: none;
+  padding: 1rem;
 }
 
 #contato form fieldset button {
@@ -175,6 +199,20 @@ thead {
 }
 
 #contato form fieldset button:hover {
-  background-color: royalblue;
+  background-color: green;
   color: white;
+  box-shadow: 0 0  1rem .5rem purple;
 }
+
+
+#contato {
+  border: solid 3px rosybrown;
+  display: flex;
+  flex-flow: wrap;
+}
+
+#contato form fieldset div textarea:focus, #contato form fieldset div input:focus {
+  outline: none;
+  box-shadow: 0 0 1rem .5rem purple;
+}
+
