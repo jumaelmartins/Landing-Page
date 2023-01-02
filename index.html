@@ -17,7 +17,12 @@
      <div class="headerContainer whiteBg">
         <header class="header mainContent">
           <h1><a href="#home">LOGO</a></h1>
-          <aside class="menu">
+          <div class="hamburguerMenu">
+            <img class="hamburguer" src="./assets/img/hamburger-menu-svgrepo-com.svg" alt="menu hamburger">
+            <input class="inputCheckBox" type="checkbox">
+            <img class="close hidden" src="./assets/img/close-svgrepo-com.svg" alt="menu hamburger fechado 'X' ">
+          </div>
+          <aside class="menu hidden">
             <nav>
               <ul>
                 <li><a href="#inicio">INICIO</a></li>
@@ -28,9 +33,10 @@
               </ul>
             </nav>
           </aside>
-        </header>
-        
+        </header>      
       </div>
+
+  
       <section id="home" class="mainBg content">
       <div class="space"></div>
 
@@ -300,7 +306,6 @@
         </div>
       </article>
     </div>
-
     <script src="./assets/js/index.js"></script>
   </body>
 </html>

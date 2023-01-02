@@ -92,6 +92,9 @@
 #gallery {
   color: black;
 }
+.hamburguerMenu {
+  display: none;
+}
 
 .galleryImg {
   border-radius: 2.2rem;

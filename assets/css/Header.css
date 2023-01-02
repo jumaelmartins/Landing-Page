@@ -23,6 +23,11 @@
       font-size: 1.2rem;
       font-weight: bold;
   }
+
+  .hamburguerMenu{
+    display: flex;
+    
+  }
   
   .menu a::after {
       content: '';
@@ -43,12 +48,10 @@
 
   .headerContainer {
     position: fixed;
-    min-width: 100%;
-    
+    min-width: 100%;   
 
     z-index: 1;
     border-bottom: .1rem solid gray;
     box-shadow: .1rem .2rem .2rem .2rem rgb(232, 232, 232);
-
   }
   

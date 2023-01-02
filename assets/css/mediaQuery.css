@@ -72,3 +72,101 @@
     }
   
 }
+
+
+@media screen and (max-width: 768px) {
+
+    
+  .headerContainer {
+    position: absolute;
+    min-width: 100%;  
+    z-index: 1;
+  }
+
+  .header {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+  }
+
+  
+  .hamburguerMenu{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    
+    transition: all 3s ease-in-out;
+
+    top: 1.2rem;
+    right: 1rem;
+  }
+
+  .hamburguerMenu:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    z-index: 3;
+    border-radius: 2.2rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .hamburguerMenu img{
+    width: 3.2rem;
+    height: 3.2rem;
+    position: absolute;
+    transition: all 3s ease-in-out;
+  }
+
+  .hamburguerMenu input{
+    width: 3.2rem;
+    height: 3.2rem;
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+  }
+
+@keyframes menuSlide {
+    for{transform: translateX(0);}
+    to {transform: translateX(-50%);}
+}
+
+  .menu ul {
+    margin-top: 4rem;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    animation: menuSlide 1s ease-in-out forwards;
+    background-color: gray;
+    opacity: .7;
+  }
+  .menu ul li {
+    display: block;
+    margin: 0 1rem;
+  }
+  .header h1 {
+      font-size: 2rem;
+      margin: 1rem;
+      position: absolute;
+      left: 0;
+      top: -0.7rem;
+  }
+  .menu a {
+      display: flex;
+      position: relative;
+      font-size: 1.2rem;
+      font-weight: bold;
+  }
+
+}
