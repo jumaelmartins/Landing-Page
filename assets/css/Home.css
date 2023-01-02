@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   color: var(--white-color);
-  
+
   align-items: center;
   justify-items: center;
 }
@@ -31,25 +31,21 @@
 
 .home img {
   width: 60rem;
-  
 }
 
 .space {
-
   height: 4rem;
 }
-
 
 .aboutContent {
   display: flex;
   flex-flow: column nowrap;
   text-align: center;
 
-  width: 60rem;
+  width: 80rem;
   justify-content: center;
   align-items: center;
 }
-
 
 .aboutContent p {
   margin: 2rem 0 0 0;
@@ -64,7 +60,7 @@
 }
 
 .grid {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -83,4 +79,102 @@
 .services p {
   font-size: 2rem;
   margin: 1rem 0;
+}
+
+#gallery {
+  color: black;
+}
+
+.galleryImg {
+  border-radius: 2.2rem;
+  margin: 1rem;
+  width: 100%;
+  max-width: 36rem;
+  max-height: 36rem;
+  overflow: hidden;
+}
+.galleryImg img {
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.galleryImg img:hover {
+  transform: translate(1rem, 1rem) rotate(15deg) scale(1.35);
+}
+
+.responsiveTable {
+  overflow: auto;
+}
+
+table caption {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  border: 0.1rem solid lightgrey;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+tfoot {
+  background-color: lightslategray;
+}
+
+thead {
+  background-color: lightslategray;
+}
+
+#contato form {
+  margin-top: 4rem;
+  display: grid;
+  grid-column: span 2;
+  width: 60%;
+}
+
+#contato form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 1rem 0;
+}
+
+#contato form fieldset {
+  width: 100%;
+  padding: 0 4rem;
+}
+
+#contato form fieldset div input {
+  height: 3rem;
+  width: 60%;
+  border-radius: 1.2rem;
+  border: none;
+  padding: 1rem;
+}
+
+#contato form fieldset div textarea {
+  width: 60%;
+  border-radius: 1.2rem;
+  border: none;
+}
+
+#contato form fieldset button {
+  height: 3rem;
+  width: 8rem;
+  border-radius: 2.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+#contato form fieldset button:hover {
+  background-color: royalblue;
+  color: white;
 }
