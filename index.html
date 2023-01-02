@@ -1,31 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercicio - Landing Page</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/GlobalStyle.css" />
+    <link rel="stylesheet" href="./assets/css/Var.css" />
+    <link rel="stylesheet" href="./assets/css/Header.css" />
+    <link rel="stylesheet" href="./assets/css/Home.css" />
+  </head>
 
-<body>
-    <section class="mainContent content mainBg">
-        <header class="header mainContent whiteBg">
-            <h1>
-                LOGO
-            </h1>
-            <aside class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </aside>
+  <body>
+    <section id="home" class="mainBg content">
+      <div class="headerContainer whiteBg">
+        <header class="header mainContent">
+          <h1>LOGO</h1>
+          <aside class="menu">
+            <nav>
+              <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#">CONTACT</a></li>
+              </ul>
+            </nav>
+          </aside>
         </header>
+      </div>
+
+      <div class="space"></div>
+
+      <div class="mainContent home">
+        <section>
+          <h2>LOREM IPSUM DOLOR SIT</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste,
+            dolores quia. Laboriosam, minima placeat rerum, iure voluptatibus ut
+            porro dignissimos impedit dolorem, laborum earum. Quia pariatur
+            voluptatum ex nemo similique.
+          </p>
+        </section>
+        <div class="imgContainer">
+          <img
+            src="./assets/img/Startup_Flatline.svg"
+            alt="Two People Planning Build a Rocket"
+          />
+        </div>
+      </div>
     </section>
+
+    <div id="about" class="content whiteBg">
+      <article class="mainContent aboutContent">
+        <h2>LOREM IPSUM DOLOR SIT</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
+          explicabo officiis iste at! Eveniet dolores nesciunt maxime saepe
+          voluptas molestias est, aliquam rerum nemo exercitationem voluptatem
+          repellat in placeat fugiat.
+        </p>
+        <p>
+          ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quam
+          deleniti omnis dignissimos nisi aliquid molestiae quia eum
+          consectetur. Voluptatum rem odit ipsam dolor corrupti alias iste fugit
+          laborum eius?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi
+          suscipit ex deleniti amet vitae iusto, itaque, nemo at numquam iste,
+          debitis voluptatibus earum veritatis enim tempora ipsum. Hic, maiores
+          perferendis! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </article>
+    </div>
+
+    <div id="services" class="mainBg content services">
+      <section class="mainContent">
+        <h2>LOREM IPSUM DOLLOR SIT</h2>
+        <p class="description">Lorem ipsum dolor sit</p>
+        <div class="grid">
+          <article>
+            <h3>TITULO 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              beatae nulla quos debitis! Odit impedit, enim molestias nisi magni
+              minus vero, in quam sunt suscipit consequatur! Minima quibusdam
+              aliquid quidem!
+            </p>
+          </article>
+          <article>
+            <h3>TITULO 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              vitae accusamus id vero eaque accusantium alias aspernatur,
+              expedita est dolor officiis, voluptas possimus. Veniam, veritatis.
+              Error porro ex velit blanditiis?
+            </p>
+          </article>
+          <article>
+            <h3>TITULO 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam non
+              ullam nemo ab ratione, aspernatur minus dolorem accusantium sed
+              nesciunt voluptatem cumque reiciendis reprehenderit aut omnis
+              saepe quos assumenda dolore.
+            </p>
+          </article>
+        </div>
+      </section>
+    </div>
     <script src="./assets/js/index.js"></script>
-</body>
+  </body>
 </html>
