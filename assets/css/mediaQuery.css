@@ -184,6 +184,7 @@
   opacity: .5;
   padding: .5rem;
 
+  z-index: 0;
   justify-content: space-between;
   height: 20%;
 
@@ -226,6 +227,7 @@
     animation: menuSlide 1s linear forwards;
     background-color: gray;
     opacity: .95;
+    z-index: 1;
   }
   .menu ul li {
     display: block;
