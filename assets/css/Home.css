@@ -101,8 +101,8 @@
   margin: 1rem;
   width: 100%;
   
-  width: 20rem;
-  height: 20rem;
+  max-width: 100%;
+  max-height: 36rem;
   overflow: hidden;
 }
 .galleryImg img {
@@ -209,7 +209,7 @@ thead {
 
 
 #contato {
-  border: solid 3px rosybrown;
+  
   display: flex;
   flex-flow: wrap;
 }

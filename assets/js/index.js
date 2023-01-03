@@ -3,20 +3,42 @@ let closeMenu = document.querySelector(".close");
 let menuItems = document.querySelector(".menu");
 let checkBox = document.querySelector(".inputCheckBox");
 let menu = document.querySelector(".hamburguerMenu");
+let links = document.querySelectorAll("a");
+let seta = document.querySelector('.seta')
+let home = document.querySelector('#homeIcon')
 
-function ShowMenu() {
+seta.addEventListener('click', e => {
+  home.classList.toggle('hidden')
+})
+
+
+function showMenu() {
   menu.addEventListener("click", (e) => {
-    if (menuItems.classList.contains("hidden")) {
-      console.log("true");
-      menuItems.classList.remove("hidden");
-      closeMenu.classList.remove("hidden");
-      hamburguer.classList.add("hidden");
-    } else {
-      console.log("false");
-      menuItems.classList.add("hidden");
-      closeMenu.classList.add("hidden");
-      hamburguer.classList.remove("hidden");
-    }
+    menuItems.classList.toggle("hidden");
+    closeMenu.classList.toggle("hidden");
+    hamburguer.classList.toggle("hidden");
   });
 }
-ShowMenu();
+
+function hiddenMenu() {
+  links.forEach((a) => {
+    a.addEventListener("click", (e) => {
+      
+
+      if (!menuItems.classList.contains("hidden")) {
+        menuItems.classList.toggle("hidden");
+        closeMenu.classList.toggle("hidden");
+        hamburguer.classList.toggle("hidden");
+      }
+
+      
+    });
+  });
+}
+
+function inicial() {
+  showMenu();
+  hiddenMenu();
+}
+
+inicial();
