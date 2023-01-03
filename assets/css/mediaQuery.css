@@ -12,7 +12,10 @@
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-    }
+        
+
+        padding: 3rem;
+   }
 
     #gallery .grid {
         display: flex;
@@ -106,6 +109,12 @@
     right: 1rem;
   }
 
+  .hamburguerMenu::after{
+    width: 0%;
+    height: 0%;
+    transition: all 3s ease-in-out;
+  }
+
   .hamburguerMenu:hover::after {
     content: '';
     position: absolute;
@@ -114,6 +123,7 @@
     background-color: blueviolet;
     z-index: 3;
     border-radius: 2.2rem;
+    opacity: .3;
   }
 
   .hidden {

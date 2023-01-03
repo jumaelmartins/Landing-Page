@@ -24,10 +24,6 @@
       font-weight: bold;
   }
 
-  .hamburguerMenu{
-    display: flex;
-    
-  }
   
   .menu a::after {
       content: '';
