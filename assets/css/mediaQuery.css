@@ -1,6 +1,10 @@
 
 @media screen and (min-width: 768px) {
-    .imgContainer {
+  .homeIcon {
+    display: none;
+  }
+
+  .imgContainer {
         display: flex;    
     }
 
